@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" > </script> 
+       
+</head>
+<body>
+    <aside id="nav-bar"> 
+        <button id="nav-button">X</button>
+        <div class="profile"></div>
+        <h2 class="name">BioFit</h2>
+        <h1 class="rol"> Cambiando Vidas</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+        <p class="reference">
+            Demo Images: <a href="https://unsplash.com/"> Unsplash.com/</a> 
+
+        </p>
+    </aside>
+    <main >
+        <section id="home">
+            <div class="home-content">
+            <h3 class="main-message"> 
+                <span> Unete</span> <br> 
+                <span> A </span> <br> 
+                <span> La </span> <br> 
+                <span> Revolucion</span>
+            </h3>
+            
+        </div>
+        </section>
+        <section id="services">
+            <div class="columna1">
+                <div class="tem">
+                        <img src="https://image.flaticon.com/icons/png/512/1041/1041143.png" id="img" alt="">
+                        <h2>Hipertrofia</h2> 
+                        <p> La hipertrofia muscular (conocida simplemente como hipertrofia) es el aumento en el tamaño de un músculo, o su área de sección transversal atribuida a un aumento en el tamaño y/o número de miofibrillas (actina y misiona) dentro de una fibra muscular dada</p> 
+                        <a href="./hipertrofia.html" target="_blank">Saber mas</a>
+                    
+                </div>
+    
+                
+                <div class="tem">
+                        <img src="https://image.flaticon.com/icons/png/512/833/833102.png" id="img" alt="">
+                        <h2 >Proteinas</h2>
+                        <p>Las proteínas son los pilares fundamentales de la vida. Cada célula del cuerpo humano las contiene. La estructura básica de la proteína es una cadena de aminoácidos. Es necesario consumir proteínas en la dieta para ayudarle al cuerpo a reparar células y producir células nuevas.</p>
+                        <a href="./proteinas.html" target="_blank">Saber mas</a>
+                </div>
+                
+                <div class="tem">
+                        <img src="https://image.flaticon.com/icons/png/512/753/753024.png" id="img"alt="">
+                         <h2 >Reducion de tejido graso</h2>
+                        <p>con una dieta restringida en calorías, es un enfoque multimodalidad para el tratamiento del sobrepeso/obesidad utilizando una combinación de estrategias para favorecer la terapia y disminuir el riesgo cardiovascular.</p>
+                        <a href="./RTG.html" target="_blank">Saber mas</a>
+                </div>
+        </div>
+        <br>
+        <div class="columna2">
+                <div class="tem1">
+                        <img src="https://image.flaticon.com/icons/png/512/2743/2743018.png" id="img"  alt="">
+                        <h2>El azucar</h2>
+                        <p>Obesidad, enfermedades cardiovasculares, diabetes y caries dentales son algunas de las tantas afecciones asociadas al consumo desmedido del azúcar.</p>
+                        <a href="./azucar.html" target="_blank">Saber mas</a>
+                </div>
+                
+                <div class="tem1">
+                        <img src="https://image.flaticon.com/icons/png/512/3654/3654785.png" id="img"alt alt="">
+                        <h2 >Grasas</h2>
+                        <p>son nutrientes que dan energía. Las grasas tienen 9 calorías en cada gramo. Las grasas ayudan en la absorción de las vitaminas A, D, E y K que se disuelven en grasa. Las grasas pueden ser saturadas o insaturadas.</p>
+                        <a href="./grasas.html" target="_blank">Saber mas</a>
+                </div>
+                
+                <div class="tem1">
+                        <img src="https://image.flaticon.com/icons/png/512/4703/4703287.png"  id="img" alt="">
+                        <h2 >El estres </h2>
+                        <p>El estrés es un sentimiento de tensión física o emocional. Puede provenir de cualquier situación o pensamiento que lo haga sentir a uno frustrado, furioso o nervioso. El estrés es la reacción de su cuerpo a un desafío o demanda.</p>
+                        <a href="./estres.html" target="_blank">Saber mas</a>
+                </div>
+        </div>
+</section>
+
+        <section id="contact">
+            <br>
+            <br>
+            <h4 style="text-align: center;">Formulario</h4>
+    <div class="form-container">
+
+        <form id="form1" novalidate method="post">
+           <input type="hidden"/>
+           <div class="form-group">
+               <label for=""><span>Nombre</span> </label>
+               <input type="text" id="nombretxt" required data-pristine-required-message="campo requerido" 
+               class="form-control" />
+           </div>
+          
+           <div class="form-group">
+               <label><span>Apellido</span> </label>
+               <input type="text" id="apellidotxt"required data-pristine-required-message="campo requerido" 
+               class="form-control"
+               />
+           </div>
+        
+           <div class="form-group">
+            <label><span>Correo electronico</span> </label>
+            <input type="text" id="correotxt" required data-pristine-required-message="campo requerido"
+            data-pristine-email-message="Este correo no es valido "
+            class="form-control"
+            />
+        </div>
+        <div class="form-group">
+            <label>  <span>Celular</span>  </label>
+            <input type="number" id="celulartxt"class="form-control" 
+                        data-pristine-required-message="Este campo es requerido"
+                        data-pristine-minlength-message="ingrese los numeros completos"
+            />
+        </div>
+        <div class="form-group">
+            <label><span>Password</span> </label>
+            <input type="password" id="clavetxt" class="form-control"required
+            data-pristine-required-message="Este campo es requerido"
+            data-pristine-password-message="la contraseña no valida" />
+          </div>
+
+           <div class="form-group inline-label">
+               <input id="ch1" type="checkbox" name="future" required 
+               data-pristine-required-message="Debe Aceptar Termino Y Condiciones "/>
+               <label for="ch1">Acepto Terminos Y Condiciones</label><br/>
+           </div>
+           <div class="form-group">
+            <input type="submit" id="boton-guardar" class="btn btn-primary" value="Enviar" />
+           </div>
+        </form>
+     </div>
+           
+        </section>
+
+        
+        
+    </main>
+
+    
+
+
+
+
+    <script src="./scritps/pristine.min.js"></script>
+    <script src="./scritps/main.js"></script>
+    <script src="./scritps/form.js"></script>
+    <!-- libreria animacion  --> 
+    
+
+
+</body>
+</html>
